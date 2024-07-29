@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Magazine</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cover {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cover img.logo {
+            width: 100px;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 800px;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('cover-background.jpg');
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #0047AB;
+            letter-spacing: 2px;
+        }
+
+        .redaksi {
+            margin-bottom: 40px;
+        }
+
+        .redaksi h2 {
+            margin-bottom: 20px;
+        }
+
+        .editor {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .editor:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .editor img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin: 0 15px;
+            border: 2px solid #ddd;
+        }
+
+        .info {
+            line-height: 1.5;
+        }
+
+        .info h3 {
+            margin: 0;
+            color: #000;
+        }
+
+        .info p {
+            margin: 0;
+            color: #555;
+        }
+
+        .info .role {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .info .department {
+            color: #000;
+        }
+
+        .daftar-isi, .rubrik, .prestasi {
+            margin-bottom: 40px;
+        }
+
+        .daftar-isi ul, .rubrik p, .prestasi p {
+            margin: 10px 0;
+        }
+
+        .daftar-isi a {
+            color: #0047AB;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <img src="logo_unkris.png" alt="UNKRIS Logo" class="logo">
+        <h1>E-Magazine Pancasila dan Kewarganegaraan</h1>
+        <p>Untuk memperjelas pengembangan Pancasila dan Kewarganegaraan sebagai pendidikan karakter serta memperkuat kepribadian.</p>
+    </div>
+    
+    <div class="content">
+        <section class="redaksi">
+            <h2>Susunan Redaksi</h2>
+            <div class="editor">
+                <img src="MR.jpg" alt="Muh Rahmadani">
+                <div class="info">
+                    <h3>Muh Rahmadani</h3>
+                    <p class="role">Pemimpin Redaksi</p>
+                    <p>2370021037</p>
+                    <p class="department">Teknik Elektro</p>
+                </div>
+            </div>
+            <div class="editor">
+                <img src="PJ.jpg" alt="Dr. Susetya Herawati">
+                <div class="info">
+                    <h3>Dr. Susetya Herawati, ST., MSi.</h3>
+                    <p class="role">Penanggung Jawab</p>
+                    <p class="department">Dosen</p>
+                </div>
+            </div>
+            <div class="editor">
+                <img src="NR.jpg" alt="Nizam Nur Rafi">
+                <div class="info">
+                    <h3>Nizam Nur Rafi</h3>
+                    <p class="role">Desain & Lay Out</p>
+                    <p>2370021025</p>
+                    <p class="department">Teknik Elektro</p>
+                </div>
+            </div>
+            <div class="editor">
+                <img src="FH.jpg" alt="Firman Hernan Krespo">
+                <div class="info">
+                    <h3>Firman Hernan Krespo</h3>
+                    <p class="role">Penjaga Rubrik 1</p>
+                    <p>2370021031</p>
+                    <p class="department">Teknik Elektro</p>
+                </div>
+            </div>
+            <div class="editor">
+                <img src="NV.jpg" alt="Nova Zhahral Nirwana Asrori">
+                <div class="info">
+                    <h3>Nova Zhahral Nirwana Asrori</h3>
+                    <p class="role">Penjaga Rubrik 2</p>
+                    <p>2370021027</p>
+                    <p class="department">Teknik Elektro</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="daftar-isi">
+            <h2>Daftar Isi</h2>
+            <ul>
+                <li><a href="#rubrik1">Dosen Pancasila dan Kewarganegaraan – Dr. Susetya Herawati</a></li>
+                <li><a href="#prestasi">Mahasiswa Fakultas Teknik yang Berprestasi</a></li>
+                <li><a href="#opini-korupsi">Opini Mahasiswa terhadap Korupsi Di Indonesia</a></li>
+                <li><a href="#good-governance">Opini Mahasiswa tentang pelaksanaan tata kelola pemerintahan Good Governance di Indonesia</a></li>
+                <li><a href="#kebijakan-publik">Analisis Kebijakan Publik Terbaru di Indonesia</a></li>
+            </ul>
+        </section>
+
+        <section class="rubrik" id="rubrik1">
+            <h2>Dosen Pancasila dan Kewarganegaraan – Dr. Susetya Herawati</h2>
+            <img src="PJ.jpg" alt="Dr. Susetya Herawati">
+            <p><strong>Dr. Susetya Herawati</strong> adalah salah satu dosen terkemuka di bidang Pancasila dan Kewarganegaraan yang telah memberikan kontribusi besar dalam pengembangan kurikulum pendidikan karakter di Indonesia. Beliau telah menerbitkan berbagai penelitian mengenai penerapan nilai-nilai Pancasila dalam kehidupan sehari-hari dan pendidikan. Melalui pendekatan yang komprehensif dan berbasis riset, beliau terus mengupayakan inovasi dalam metode pengajaran dan evaluasi pendidikan Kewarganegaraan, dengan tujuan untuk membentuk karakter mahasiswa yang berintegritas, berpikir kritis, dan peduli terhadap sesama.</p>
+            <p>Kontribusi beliau juga terlihat dalam penulisan buku teks dan materi ajar yang digunakan secara luas di berbagai institusi pendidikan. Melalui seminar-seminar yang beliau selenggarakan, Dr. Susetya Herawati berupaya untuk menyebarluaskan pemahaman tentang pentingnya nilai-nilai Pancasila dalam konteks global dan lokal, serta mendiskusikan strategi-strategi efektif untuk integrasi nilai tersebut dalam kehidupan masyarakat.</p>
+            <p>Dr. Herawati juga aktif dalam pengembangan kebijakan pendidikan nasional, memberikan saran dan rekomendasi untuk pemerintah dalam upaya peningkatan kualitas pendidikan karakter. Beliau berkomitmen untuk menciptakan lingkungan belajar yang kondusif bagi mahasiswa untuk berkembang secara holistik, dengan penekanan pada nilai-nilai luhur Pancasila yang relevan dengan tantangan zaman.</p>
+        </section>
+
+        <section class="prestasi">
+            <h2>Mahasiswa Fakultas Teknik yang Berprestasi</h2>
+            <p><strong>Nama:</strong> Ahmad Kurniawan</p>
+            <p><strong>Prestasi:</strong> Juara 1 Kompetisi Robotika Nasional 2024</p>
+            <p><strong>Deskripsi:</strong> Ahmad Kurniawan, mahasiswa Teknik Elektro, berhasil meraih juara pertama dalam Kompetisi Robotika Nasional 2024 yang diselenggarakan oleh Asosiasi Robotika Indonesia. Kompetisi ini menguji keterampilan dalam merancang, membangun, dan mengoperasikan robot untuk menyelesaikan berbagai tantangan teknis. Ahmad menunjukkan kreativitas dan kemampuan teknis yang luar biasa dengan menciptakan robot yang dapat menyelesaikan berbagai tugas dengan efisien dan akurat. Keberhasilan ini tidak hanya menonjolkan kemampuan pribadi Ahmad tetapi juga mempromosikan Fakultas Teknik UNKRIS sebagai salah satu pusat inovasi teknologi di Indonesia.</p>
+            <p>Selain itu, Ahmad juga aktif dalam berbagai kegiatan ekstrakurikuler yang berfokus pada pengembangan teknologi dan inovasi. Ia terlibat dalam tim pengembangan robot untuk kompetisi internasional dan telah memberikan pelatihan kepada mahasiswa lainnya mengenai teknologi robotika dan otomatisasi. Kontribusi Ahmad dalam bidang ini diakui secara luas oleh komunitas akademik dan industri, menjadikannya sebagai inspirasi bagi generasi muda di bidang teknologi.</p>
+        </section>
+
+        <section class="rubrik" id="opini-korupsi">
+            <h2>Opini Mahasiswa terhadap Korupsi Di Indonesia</h2>
+            <p><strong>Nova Zhahral Nirwana Asrori:</strong> "Korupsi merupakan tantangan besar yang menghambat kemajuan pembangunan di Indonesia. Mahasiswa sebagai agen perubahan memiliki peran penting dalam meningkatkan kesadaran tentang bahaya korupsi. Melalui pendidikan dan pelatihan tentang etika dan integritas, mahasiswa dapat membantu membangun budaya anti-korupsi yang kuat. Selain itu, keterlibatan aktif dalam kegiatan anti-korupsi, seperti kampanye dan seminar, dapat memperkuat komitmen kolektif untuk mengatasi isu ini."</p>
+            <p><strong>Firman Hernan Krespo:</strong> "Korupsi adalah salah satu masalah utama yang merusak fondasi pemerintahan yang baik dan kepercayaan masyarakat. Untuk mengatasi masalah ini, perlu adanya reformasi sistemik yang melibatkan transparansi, akuntabilitas, dan pengawasan yang ketat. Pendidikan anti-korupsi yang dimulai dari tingkat pendidikan tinggi harus menekankan pentingnya etika dan kepatuhan terhadap hukum. Mahasiswa dapat berperan aktif dengan terlibat dalam pengawasan dan pelaporan kasus korupsi, serta mendukung inisiatif reformasi yang berorientasi pada integritas dan keadilan."</p>
+            <p>Keterlibatan mahasiswa dalam upaya anti-korupsi juga mencakup kolaborasi dengan lembaga-lembaga anti-korupsi dan organisasi masyarakat sipil untuk mendorong transparansi dan akuntabilitas di sektor publik dan swasta. Dengan meningkatkan kesadaran dan mendukung kebijakan anti-korupsi, mahasiswa dapat berperan dalam menciptakan lingkungan yang lebih bersih dan berintegritas.</p>
+        </section>
+
+        <section class="rubrik" id="good-governance">
+            <h2>Opini Mahasiswa tentang pelaksanaan tata kelola pemerintahan Good Governance di Indonesia</h2>
+            <p><strong>Nova Zhahral Nirwana Asrori:</strong> "Good Governance adalah prinsip dasar yang harus diterapkan dalam setiap aspek pemerintahan untuk memastikan transparansi, akuntabilitas, dan partisipasi publik. Di Indonesia, implementasi good governance dapat diperkuat melalui pengembangan sistem informasi yang transparan, pelaksanaan audit berkala, dan peningkatan keterlibatan masyarakat dalam proses pengambilan keputusan. Mahasiswa dapat berperan sebagai pengawas dan pendukung reformasi dengan memberikan masukan konstruktif dan melibatkan diri dalam inisiatif masyarakat yang mendukung prinsip-prinsip good governance."</p>
+            <p><strong>Firman Hernan Krespo:</strong> "Tata kelola pemerintahan yang baik adalah kunci untuk menciptakan negara yang adil dan makmur. Di Indonesia, tantangan utama dalam pelaksanaan good governance termasuk korupsi, birokrasi yang tidak efisien, dan kurangnya partisipasi publik. Untuk mengatasi tantangan ini, perlu adanya reformasi struktural yang melibatkan pemanfaatan teknologi untuk meningkatkan efisiensi dan transparansi, serta pelibatan aktif masyarakat dalam proses pengawasan. Mahasiswa dapat berkontribusi dengan mempromosikan pendidikan tentang good governance dan berpartisipasi dalam program-program yang mendukung pemerintahan yang bersih dan efektif."</p>
+            <p>Partisipasi aktif mahasiswa dalam program-program masyarakat seperti forum diskusi, pengawasan proyek publik, dan pelatihan untuk meningkatkan kesadaran mengenai good governance dapat memainkan peran kunci dalam memperkuat prinsip-prinsip tata kelola pemerintahan yang baik. Melalui kolaborasi dengan lembaga-lembaga pemerintah dan organisasi masyarakat, mahasiswa dapat membantu memajukan agenda reformasi tata kelola di Indonesia.</p>
+        </section>
+
+        <section class="rubrik" id="kebijakan-publik">
+            <h2>Analisis Kebijakan Publik Terbaru di Indonesia</h2>
+            <p><strong>Analisis:</strong> Kebijakan publik terbaru di Indonesia mencakup berbagai isu strategis mulai dari reformasi ekonomi hingga pengelolaan sumber daya alam. Pemerintah Indonesia telah meluncurkan beberapa kebijakan baru yang bertujuan untuk mempercepat pertumbuhan ekonomi, mengurangi kesenjangan sosial, dan meningkatkan kesejahteraan masyarakat. Salah satu kebijakan penting adalah program transformasi digital yang dirancang untuk meningkatkan efisiensi layanan publik dan mendorong inovasi di sektor swasta.</p>
+            <p>Selain itu, kebijakan terkait perubahan iklim dan keberlanjutan lingkungan menjadi fokus utama, dengan inisiatif untuk mengurangi emisi karbon dan melindungi biodiversitas. Implementasi kebijakan ini memerlukan dukungan dari semua sektor masyarakat, termasuk mahasiswa, untuk memastikan bahwa tujuan-tujuan lingkungan dan sosial dapat tercapai secara efektif.</p>
+            <p>Analisis lebih mendalam tentang dampak dari kebijakan-kebijakan ini menunjukkan bahwa meskipun ada kemajuan, tantangan dalam hal pelaksanaan dan pengawasan masih tetap ada. Partisipasi aktif dari berbagai pihak, termasuk mahasiswa, dalam memberikan masukan dan kritik konstruktif sangat penting untuk meningkatkan kualitas dan efektivitas kebijakan publik di Indonesia.</p>
+        </section>
+    </div>
+</body>
+</html>
